@@ -17,7 +17,8 @@
 </head>
 <body>
   <!-- navbar -->
-  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3">
+  <nav id="navbar-example2" class="navbar bg-body-tertiary sticky-top shadow">
+    <div class="container">
     <a class="navbar-brand" href="#">HaBitácora</a>
     <ul class="nav nav-pills mr-auto">
       <li class="nav-item">
@@ -36,44 +37,45 @@
         </ul>
       </li>
     </ul>
+    </div>
   </nav>
   <!--Sección Principal-->
-  <section id="scrollspyHeading1" class="bg-light">
-    <div class="container-fluid py-5">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="img\flower-butterfly.png" alt="Mariposa en flor." class="img-fluid rounded-start" width="500" height="500">
+  <section id="scrollspyHeading1" class="my-5">
+    <div class="container">
+      <div class="bg-white rounded-4 shadow p-5">
+        <div class="row p-5">
+          <div class="col-md-6">
+            <img src="img\flower-butterfly.png" alt="Mariposa en flor." class="img-fluid rounded-start" width="500" height="500">
+          </div>
+          <div class="col-md-6">
+            <h1 class="display-6 fw-bold">HaBitácora</h1>
+            <p class="col-md-8 fs-5">Una página web para la documentación de espécies de fauna y flora en un proyecto personal de permacultura.</p>
+            <button class="btn btn-outline-light btn-lg" type="button">Ir al observatorio</button>
+          </div>  
         </div>
-        <div class="col-md-6">
-          <h1 class="display-6 fw-bold">HaBitácora</h1>
-          <p class="col-md-8 fs-5">Una página web para la documentación de espécies de fauna y flora en un proyecto personal de permacultura.</p>
-          <button class="btn btn-outline-light btn-lg" type="button">Ir al observatorio</button>
-        </div>  
       </div>
-      
     </div>
+  </section>
   <!--Sección Acerca de-->
-  <section id="scrollspyHeading2" class="bg-dark text-white">
-      <div class="container-fluid py-5 px-5">
+  <section id="scrollspyHeading2" class="bg-white rounded-4 shadow p-5 my-5 container">
         <h1 class="display-6 fw-bold">Acerca del proyecto</h1>
         <p class="col-md-8 fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nemo ea beatae molestiae, maiores quo veniam iure nostrum provident, cum explicabo quam perferendis cupiditate perspiciatis ipsum rem dicta alias inventore.</p>
-      </div>
   </section>
   <!--Sección Contacto-->
-  <section id="scrollspyHeading3" class="bg-light">
-    <div class="container-fluid py-5 px-5">
+  <section id="scrollspyHeading3" class="bg-white rounded-4 shadow p-5 my-5 container">
+    
       <h1 class="display-6 fw-bold">Contacto</h1>
       <p class="col-md-8 fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nemo ea beatae molestiae, maiores quo veniam iure nostrum provident, cum explicabo quam perferendis cupiditate perspiciatis ipsum rem dicta alias inventore.</p>
-    </div>
+    
   </section>
-  <!--Footer-->
-  <footer id="scrollspyHeading4" class="bg-dark text-white">
-    <div class="container-fluid py-5 px-5">
-      <p class="text-center">HaBitácora 2025 Todos los derechos reservados(?</p>
-    </div>
   <!-- This div enables Bootstrap's scrollspy functionality to highlight navbar links based on scroll position -->
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-  </div>
+  <!-- <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+  </div>-->
+  <!--Footer-->
+  <footer id="scrollspyHeading4" class="footer">
+    <p>HaBitácora 2025 Todos los derechos reservados(?)</p>
+  </footer>
+
   <!--bootstrap JS y Popper-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>

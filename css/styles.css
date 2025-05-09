@@ -1,5 +1,22 @@
 body {
+    background: linear-gradient(135deg, #60ffaa, #aaff60); /* Color de fondo en gradiente */
+    min-height: 100vh; /* Asegura que cubra toda la pantalla */
+    margin: 0; /* Elimina el margen por defecto */
+    /* Fuente personalizada */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normalc;
+}
+.footer {
+    background-color: rgba(0,0,0,0.5); /* Color negro, transparencia media. */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+    bottom: 0; /* Alineado al fondo */
+    width: 100%; /* Ancho completo */
+    margin-top: auto; /* Lo empuja abajo de todo */
+}
+.footer p {
+  color: white;
+  margin: 0;
 }
