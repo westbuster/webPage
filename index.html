@@ -18,7 +18,7 @@
 <body>
   <header>
     <nav class="navbar sticky-top shadow">
-      <div class="container-fluid">
+      <div class="container px-4">
         <a class="navbar-brand" href="#">HaBitácora</a>
         <ul class="nav nav-pills">
           <li class="nav-item">
@@ -40,32 +40,67 @@
   <main id="slider-container">
     <!--Sección Principal-->
     <section class="page active my-5" id="pagina1">
-      <div class="container">
-        <div class="bg-white rounded-4 shadow p-5">
-          <div class="row p-5">
-            <div class="col-md-6">
-              <img src="img\flower-butterfly.png" alt="Mariposa en flor." class="img-fluid rounded-start" width="500" height="500">
-            </div>
-            <div class="col-md-6">
-              <h1 class="display-6 fw-bold">HaBitácora</h1>
-              <p class="col-md-8 fs-5">Una página web para la documentación de espécies de fauna y flora en un proyecto personal de permacultura.</p>
-              <a href="observatorio.html" class="btn1">
-                <span class="btn1-text">Ir al observatorio</span>
-              </a>
-            </div>  
-          </div>
+      <div class="container px-4 d-flex align-items-center" style="min-height: 100vh;">
+        <div class="w-50 p-3 text-center">
+          <img src="img\flower-butterfly.png" alt="Mariposa en flor." class="img-fluid rounded-start" width="500" height="500">
+        </div>
+        <div class="w-50 p-3">
+          <h1 class="display-6 fw-bold">HaBitácora</h1>
+          <p class="col-md-6 fs-5">Una página web para la documentación de espécies de fauna y flora en un proyecto personal de permacultura.</p>
+          <a href="observatorio.html" class="btn1">
+            <span class="btn1-text">Ir al observatorio</span>
+          </a>
         </div>
       </div>
     </section>
     <!--Sección Acerca de-->
     <section class="page active my-5" id="pagina2">
-      <h1 class="display-6 fw-bold">Acerca del proyecto</h1>
-      <p class="col-md-8 fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nemo ea beatae molestiae, maiores quo veniam iure nostrum provident, cum explicabo quam perferendis cupiditate perspiciatis ipsum rem dicta alias inventore.</p>
+      <div class="container p-4">
+        <h1 class="display-6 fw-bold">Acerca del proyecto</h1>
+        <p class="col-md-8 fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nemo ea beatae molestiae, maiores quo veniam iure nostrum provident, cum explicabo quam perferendis cupiditate perspiciatis ipsum rem dicta alias inventore.</p>
+      </div>
     </section>
     <!--Sección Contacto-->
-    <section class="page active my-5" id="pagina3">
-      <h1 class="display-6 fw-bold">Contacto</h1>
-      <p class="col-md-8 fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nemo ea beatae molestiae, maiores quo veniam iure nostrum provident, cum explicabo quam perferendis cupiditate perspiciatis ipsum rem dicta alias inventore.</p>
+    <section class="page active" id="pagina3">
+      <div class="container p-4">
+        <h1 class="display-6 fw-bold">Contacto</h1>
+        <p class="fs-5">¿Tenés preguntas o sugerencias? Completá el formulario y envianos tu mensaje.</p>
+        <form id="formulario-contacto">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+          <button class="btn1">
+            <span class="btn1-text">Enviar</span>
+          </button>
+        </form>
+      </div>
+      <div class="container p-4">
+        <h2 class="display-6 fw-bold">Ubicación</h2>
+        <p class="fs-5">Estamos ubicados en la Universidad Nacional del Oeste, Sede Córdoba.</p>
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2320.4322717036025!2d-58.73319012973098!3d-34.66514387016676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe3c894d66b%3A0x17441e591546d823!2sUniversidad%20Nacional%20del%20Oeste%20-%20Sede%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1748544592020!5m2!1ses!2sar"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
