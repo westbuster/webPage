@@ -51,7 +51,7 @@
         </div>
         <div class="w-50 p-3">
           <h1 class="display-6 fw-bold">HaBitácora</h1>
-          <p class="col-md-6 fs-5">Una página web para la documentación de espécies de fauna y flora en un proyecto personal de permacultura.</p>
+          <p class="col-md-6 fs-5">Una página web para la documentación de espécies de fauna y flora.</p>
           <a href="observatorio.html" class="btn1">
             <span class="btn1-text">Ir al observatorio</span>
           </a>
@@ -70,7 +70,8 @@
       <div class="container p-4">
         <h1 class="display-6 fw-bold">Contacto</h1>
         <p class="fs-5">¿Tenés preguntas o sugerencias? Completá el formulario y envianos tu mensaje.</p>
-        <form id="formulario-contacto" onsubmit="return validarFormulario()">
+        <form id="formulario-contacto" onsubmit="return validarFormulario()" action="https://formspree.io/f/xpwrqrra"
+  method="POST">
           <div class="form-group">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre">
