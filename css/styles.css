@@ -2,8 +2,6 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 header {
   position: fixed; /* Permanece visible aunque el contenido se desplace */
@@ -26,7 +24,7 @@ nav {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 .navbar-brand:hover {
-  transform: scale(1.05);             /* Ligeramente más grande */
+  transform: scale(1.1);             /* Ligeramente más grande */
 }
 .nav-btn {
   background: #ffffff;
@@ -42,28 +40,14 @@ nav {
 }
 .nav-btn:hover {
   color: #1a1a1a;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .nav-btn.active {
   color: #1a1a1a !important;
-  transform: scale(1.05);
+  transform: scale(1.1);
   outline: none !important;
   box-shadow: none !important;
   background-color: transparent !important; /* evita fondo azul */
-  outline: none !important;
-  box-shadow: none !important;
-}
-.nav-text {
-  cursor: default;
-  font-family: "Poppins", sans-serif; /* Cambia la fuente */
-  font-size: 20px;                    /* Tamaño del texto */
-  font-weight: bold;                  /* Negrita */
-  color: #1a1a1a;                     /* Color del texto */
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 body {
   display: flex;
@@ -130,7 +114,7 @@ main {
 }
 /* Agranda el texto cuando se hace hover sobre el botón */
 .btn1:hover .btn1-text {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 #contacto {
   padding: 40px 20px;
