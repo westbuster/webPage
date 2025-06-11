@@ -12,12 +12,14 @@
 }
 .wip-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;  /* centra horizontalmente */
   align-items: center;      /* centra verticalmente */
+  height: 92vh;
+  margin-top: 8vh;
 }
 .wip-container img {
-  max-height: 67vh;  /* máximo 67% del viewport height */
-  max-width: 100%;   /* que no se salga del contenedor horizontalmente */
-  height: auto;      /* que mantenga proporción */
-  width: auto;
+  height: 80%;
+  max-width: 100%;
+  object-fit: contain;
 }

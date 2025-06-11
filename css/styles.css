@@ -8,13 +8,12 @@ header {
   top: 0; /* Alineado arriba */
   z-index: 10;
   width: 100%; /*Ocupa todo el ancho*/
-  overflow: hidden;
-}
-nav {
-  background-color: white;
 }
 .navbar {
-  width: 100%;
+  background-color: white;
+  min-width: 100vw;
+  min-height: 8vh;
+  flex-wrap: wrap;
 }
 .navbar-brand {
   font-family: "Poppins", sans-serif; /* Cambia la fuente */
@@ -63,7 +62,6 @@ body {
 main {
   min-height: 100vh;
   background: linear-gradient(135deg, #60ffaa, #aaff60);
-  overflow: hidden; /* este contiene el scroll horizontal, no vertical */
 }
 #slider-container {
   top: 80px;
@@ -75,11 +73,10 @@ main {
 .page {
   width: 33.333%; /* Porque hay 3 secciones */
   flex-shrink: 0;
-  height: 100vh; /* Altura completa de la ventana */
-  padding-top: 80px; /* Espacio para el header */
-  padding-bottom: 40px;
+  min-height: 92vh; /* Altura completa de la ventana */
+  margin-top: 8vh; /* Espacio para la navbar */
   overflow-y: auto;
-  box-sizing: border-box;
+  overflow-x: hidden; /* Evita el scroll horizontal */
 }
 /* Activar segunda sección */
 #slider-container.to-second {
@@ -89,8 +86,95 @@ main {
 #slider-container.to-third {
   transform: translateX(-66.6666%);
 }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 92vh;
+  width: 100vw;
+  padding-inline: 10vw;
+  padding-block: 8vh;
+}
+.img-container{
+  max-width: 100%;
+  object-fit: contain;
+}
+.map-container {
+  margin-top: 8vh;
+}
+.form-container {
+  flex: 2;
+  margin-right: 2vw;
+}
+.social-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2vw;
+  background: linear-gradient(135deg, #aaff60, #60ffaa);
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.scl-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  color: #1a1a1a;
+}
+.scl-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  height: 80%;
+  width: 90%;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+.scl-btn {
+  display: flex; /* Alineación horizontal de ícono + texto */
+  align-items: center; /* Alinea verticalmente ícono y texto */
+  gap: 0.5em; /* Espacio entre ícono y texto */
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease;
+}
+.scl-btn i {
+  font-size: 1.5em;
+  transition: inherit;
+}
+.scl-btn:hover {
+  transform: scale(1.1);
+}
+.scl-btn-text {
+  display: inline-block;
+}
+/* Colores específicos para cada red social */
+.facebook:hover i{
+  color: #1877f2;
+}
+.instagram:hover i{
+  color: #d62976
+}
+.twitter:hover i{
+  color: #1da1f2;
+}
+.discord:hover i{
+  color: #5865f2;
+}
+.whatsapp:hover i{
+  color: #25d366;
+}
 .btn1 {
-  display: block; /* esto es clave para que margin auto funcione */
+  display: block; /* para que margin auto funcione */
+  width: fit-content;
   margin: 20px auto 0 auto; /* centrado horizontal + separación arriba */
   padding: 12px 24px;
   font-size: 18px;
@@ -116,21 +200,30 @@ main {
 .btn1:hover .btn1-text {
   transform: scale(1.1);
 }
+.title{
+  margin-top: 0;
+  margin-bottom: 1vh;
+}
+.info-text{
+  margin-top: 1vh;
+  margin-bottom: 0;
+  text-align: justify;
+  text-indent: 2vw;
+}
 #contacto {
   padding: 40px 20px;
   color: #1a1a1a;
 }
 #formulario-contacto {
-  max-width: 600px;
-  margin-top: 40px;
+  margin-top: 2vh;
 }
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
   display: flex;
   flex-direction: column;
 }
 .form-group label {
-  margin-bottom: 5px;
+  margin-bottom: 0.5vh;
   font-size: 18px;
   font-weight: bold;
   color: #1a1a1a;
@@ -148,6 +241,7 @@ main {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: 2px solid #ffffff;
+  outline-offset: -2px;
 }
 .mapa {
   border-radius: 10px;
